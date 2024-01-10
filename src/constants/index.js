@@ -132,7 +132,7 @@ import {
     },
     {
       // title: "React Native Developer",
-      title: "PHP Developer",
+      title: "Backend Developer",
       company_name: "Tesla",
       icon: tesla,
       iconBg: "#E6DEDD",
