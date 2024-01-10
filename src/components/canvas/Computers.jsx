@@ -8,7 +8,7 @@ import { Canvas } from "@react-three/fiber";   // empty canvas to place somethin
 // useGLTF allow us to import 3D models
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
-import CannvasLoader from '../Loader';
+import CanvasLoader from '../Loader';
 
 const Computers = () => {
   // import GLTF model
@@ -59,8 +59,8 @@ const ComputersCanvas = () => {
     >
 
       {/* Suspense is from react, allows us to have a loader while model is loading */}
-      {/* <Suspense fallback={<CanvasLoader />}> */}
-      <Suspense>
+      <Suspense fallback={<CanvasLoader />}>
+      {/* <Suspense> */}
         <OrbitControls 
           enableZoom={false}
           // so we are limited in the movement angles: max/min polar angle

@@ -30,8 +30,12 @@ const Hero = () => {
         </div>
 
       </div>
-      
+
         <ComputersCanvas />
+
+        {/* Scroll down mechanic for next sectionn */}
+
+        
       
     </section>
   )
