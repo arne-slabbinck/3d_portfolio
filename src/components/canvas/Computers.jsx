@@ -10,7 +10,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from '../Loader';
 
-const Computers = () => {
+const Computers = ({ isMobile }) => {
   // import GLTF model
   const computer = useGLTF('./desktop_pc/scene.gltf')
 
@@ -36,8 +36,8 @@ const Computers = () => {
        {/* Self closing component wich we can pass the 3D object to */}
        <primitive
         object={computer.scene}
-        scale={0.75}
-        position={[0, -3.25, -1.5]}
+        scale={isMobile ? 0.65 : 0.75}
+        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
        />
 
@@ -48,6 +48,44 @@ const Computers = () => {
 }
 
 const ComputersCanvas = () => {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  //The thing this useEffect is doing is changing the isMobile variable
+
+  useEffect(() => {
+    // Add a listener for changes to the screen
+    
+    // Check if we are on mobile device
+    const mediaQuery = window.matchMedia('(max-width: 500px)');
+
+    // if the media query matches max width 500px then we know it is on mobile device 
+    // we set true to isMobile
+      
+    // Set the initial value of the 'isMobile' state variable
+    setIsMobile(mediaQuery.matches);
+    
+
+    // Define a callback function nto handle changes to the media query
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    }
+
+      // Since we are in react and withinn the useEffect we have to add eventlistener and remove it
+      // Add the callback function as a listener for changes to the media query
+    mediaQuery.addEventListener('change',
+      handleMediaQueryChange);
+
+    // Remove the listener when the component is unmounted
+
+    return () => {
+        mediaQuery.removeEventListener('change', handleMediaQueryChange);
+      }
+    
+  }, [])
+
+  
+
   return (
     <Canvas
       frameloop="demand"
@@ -69,7 +107,8 @@ const ComputersCanvas = () => {
           />
 
         {/* Finally render the computer model componennt */}
-        <Computers />
+        <Computers isMobile={isMobile} />
+
       </Suspense>
 
       <Preload all />
