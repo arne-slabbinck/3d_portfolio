@@ -118,7 +118,7 @@ import {
     {
       // title: "React.js Developer",
       title: "Multimedia & Communication Technology",
-      company_name: "Starbucks",
+      company_name: "HOWEST Hogeschool Kortrijk",
       icon: starbucks,
       iconBg: "#383E56",
       // date: "March 2020 - April 2021",
@@ -133,7 +133,7 @@ import {
     {
       // title: "React Native Developer",
       title: "Backend Developer",
-      company_name: "Tesla",
+      company_name: "VDAB",
       icon: tesla,
       iconBg: "#E6DEDD",
       // date: "Jan 2021 - Feb 2022",
@@ -159,7 +159,7 @@ import {
     },
     {
       title: "Full stack Developer",
-      company_name: "Meta",
+      company_name: "Online Courses",
       icon: meta,
       iconBg: "#E6DEDD",
       date: "Jan 2021 - Present",
