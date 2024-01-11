@@ -22,6 +22,9 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
+import drupal from "./company/drupal.png";
+import mct from "./company/mct.jpeg";
+import mctblack from "./company/mctblack2.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
@@ -55,6 +58,9 @@ export {
   meta,
   shopify,
   starbucks,
+  drupal,
+  mct,
+  mctblack,
   tesla,
   carrent,
   jobit,
