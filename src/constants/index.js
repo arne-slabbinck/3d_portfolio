@@ -125,9 +125,9 @@ import {
       date: "Sep 2008 - June 2011",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
+        "Implementing responsive design and ensuring cross-browser compatibility.",
+        
       ],
     },
     {
@@ -139,9 +139,8 @@ import {
       // date: "Jan 2021 - Feb 2022",
       date: "Sep 2013 - June 2015",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Developing and maintaining web applications using React.js and other related technologies.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
@@ -156,7 +155,6 @@ import {
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
@@ -166,10 +164,10 @@ import {
       iconBg: "#E6DEDD",
       date: "Jan 2021 - Present",
       points: [
+        "Participating in code reviews and providing constructive feedback to other developers.",
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        
       ],
     },
   ];
